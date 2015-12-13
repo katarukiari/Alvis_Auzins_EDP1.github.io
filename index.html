@@ -2,39 +2,68 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="css/lightbox.css" rel="stylesheet" /> 
+<link href="css/my.css" rel="stylesheet" />
+<link rel="SHORTCUT ICON" href="bildes/favicon.ico"/>
 <title>AATema</title>
 <link rel="stylesheet" type="text/css" href="css.css">
-</head>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script type="text/javascript">
+     $("document").ready(function() {
+            $('.noslept section[id^=tab]').hide();
+            $('.noslept section[id^=tab]:first').show();
+            
+            $('#tabs ul li a').click(function(){ 
+               var currentTab = $(this).attr('href');
+               $('.noslept section[id^=tab]').hide();
+               $(currentTab).show();
+            });
 
+
+});
+</script>
+
+</head>
 <body>
-	<div class="container">
-	<header>
-		<img src="dancers.png" alt="logo arena" class="logo"/>
+	<header id = "A">
+		<img src="bildes/dancers.png" alt="logo arena" class="logo"/>
+        <div id="tabs">
 	       <nav class="top_nav">
 		      <ul class = "izvelne2">
-			    <li><a href = "tests.html">Sākums</a></li>
-			    <li><a href = "tests.html">Galerija</a></li>
-                <li><a href = "tests.html">Raksti</a></li>
-			    <li><a href = "tests.html">Kontakti</a></li>
+			    <li><a href = "#tab1">Sākums</a></li>
+			    <li><a href = "#tab2">Galerija</a></li>
+                <li><a href = "#tab3">Raksti</a></li>
+			    <li><a href = "#tab4">Kontakti</a></li>
 		      </ul>
 	       </nav>
+         </div>  
 	       <div class="clear"></div>
 	</header>
-  
-	<section class="left_side">
+  <div class = "noslept">
+	<section id="tab1">
       <article>
       	 <header>
-      	    <h2> This is Article Header!</h2>
-      	    <h3> This is sub header</h3>
+      	    <h2>Informācija par mājaslapu</h2>
+      	    <h3>Apraksts</h3>
          </header>
-         <p> This is para 1 </p>
-         <p> This is para 2 </p>
+         <p> Informācija par dejām 1 </p>
+         <p> Informācija par dejām 2 </p>
          <footer>
-         	 - rakstijis Alvis Auzins
+         	 - rakstijis Alvis Auzinš
          </footer>
       </article>
 	</section>
+    <section id="tab2">
+        <h3>Galerija</h3>
+        <br/><hr/>
+        <a href="bildes/1.jpg" rel="lightbox[html]" title="HTML pirmā bilde"><img src = "bildes/1.jpg"/></a>
+        <a href="bildes/2.jpg" rel="lightbox[html]" title="HTML otrā bilde"><img src = "bildes/2.jpg"/></a>
+        <a href="bildes/3.jpg" rel="lightbox[html]" title="HTML trešā bilde"><img src = "bildes/3.jpg"/></a>
+        <br/><hr/>
 
+</section>
+  </div>
 	<aside class="right_side">
         <div>
         	<h2> Social links </h2>
@@ -61,7 +90,7 @@
 	<footer class="page_footer">
 		&copy; Copywrite AlvisAuzinsEDP1
 	</footer>
-</div>	
+	
 </body>
 
 </html>
