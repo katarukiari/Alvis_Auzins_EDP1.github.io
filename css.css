@@ -1,4 +1,66 @@
 /* MLapas dancers css fails */
+*{
+   margin:0px;
+   padding:0px;
+   list-style-type:none;
+}
+
+header,nav,article,section,footer,aside{
+   display:block;
+
+}
+/*centreju MLapu */
+.container{
+	width:1000px;
+	margin:0px auto;
+}
+
+.clear{
+	clear:both;
+}
+
+.logo{
+ height:259px;
+ width:195px;
+ float:left;
+}
+
+.top_nav{
+     float:left;
+     width:805px;
+
+}
+
+/*Float aside and main section */
+.left_side{
+	float:left;
+	width:700px;
+}
+.right_side{
+    float:left;
+    width:300px;
+}
+.left_side article{
+	border:2px solid red;
+	margin-right:10px;
+	padding:10px;
+}
+.right_side div{
+	border:2px solid blue;
+	margin:0px 0px 10px 0px; /*top left bottom right*/
+	padding:10px;
+}
+
+
+
+
+/*make footer clear floated elements*/
+.page_footer{
+	clear:both;
+	text-align:center;
+}
+
+
 body{
 	font-family:Arial, Helvetica, sans-serif;
 	background-color:#09F;
