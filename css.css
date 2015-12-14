@@ -45,8 +45,8 @@ padding:10px;
 	width:700px;
 }
 .right_side{
-    float:left;
-    width:300px;
+    margin:auto;
+    width:500px;
 }
 .tab1 article{
 	border:2px solid red;
@@ -55,7 +55,7 @@ padding:10px;
 }
 .right_side div{
 	border:2px solid blue;
-	margin:0px 0px 10px 0px; /*top left bottom right*/
+	margin:10px 0px 10px 0px; /*top left bottom right*/
 	padding:10px;
 }
 
@@ -71,7 +71,7 @@ padding:10px;
 
 body{
 	font-family:Arial, Helvetica, sans-serif;
-	background-color:#09F;
+	background-image:url(bildes/bg.png)
 }
 
 .header, .izvelne2{
@@ -113,5 +113,11 @@ height:100px;
 width:100px;
 border:4px;
 padding:10px;
+}
+.mans_foto {
+height:300px;
+width:200px;
+
+
 }
 
