@@ -117,7 +117,95 @@ padding:10px;
 .mans_foto {
 height:300px;
 width:200px;
-
-
 }
 
+
+
+.modal-dialog .modal-content .modal-body
+{
+    background-color: #666;
+    padding-left: 25px ;
+    padding-right: 25px ;
+  
+  
+}
+
+.modal-dialog .modal-content .modal-body button
+{
+    color : white ;
+    background-color: #666;
+}
+
+
+
+.modal-dialog
+{
+    
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+    color : white;
+    width: 300px ;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #396c9f;
+    color: white;
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+ .btn-lg, .btn-lg:hover, .btn-lg:focus, .btn-lg:active {
+    
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav  .btn btn-info btn-lg
+{
+    background-color: transparent ;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: white;
+    background-color: #396c9f; 
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 20px ;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+    text-align: left ;
+}
+
+.navbar-default 
+{
+  background-color: #666;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:visited,
+.navbar-default .navbar-brand:hover
+{
+	color: white;
+    font-family: Impact, Charcoal, sans-serif ;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 28px ;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: transparent;  
+}
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #396c9f;  
+}

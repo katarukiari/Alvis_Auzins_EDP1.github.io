@@ -2,16 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="css/lightbox.css" rel="stylesheet" /> 
-<link href="css/my.css" rel="stylesheet" />
-<link rel="SHORTCUT ICON" href="bildes/favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
 <title>AATema</title>
+<link rel="SHORTCUT ICON" href="bildes/favicon.ico"/>
+
+<link href="css/lightbox.css" rel="stylesheet" /> 
+<link href = "css/bootstrap.min.css" rel = "stylesheet">
 <link rel="stylesheet" type="text/css" href="css.css">
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/lightbox.js"></script>
+<link href="css/my.css" rel="stylesheet" />
+<script src="js/jquery-2.0.0.min.js"></script>
 <script type="text/javascript">
+
+
      $("document").ready(function() {
             $('.noslept section[id^=tab]').hide();
+            $('.noslept section[id^=tab]:first').show();
+
+             $('.noslept section[id^=tab]').hide();
             $('.noslept section[id^=tab]:first').show();
             
             $('#tabs ul li a').click(function(){ 
@@ -24,8 +33,60 @@
 });
 </script>
 
+
+
+
+
+
 </head>
 <body>
+
+
+  <nav class="navbar navbar-default"> 
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">Esi Sveicināts</div> 
+        </div>
+        <div id="tabs">
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#tab1">Sākums</a></li>
+            <li class="active"><a href="#tab2">Galerija</a></li>
+            <li class="active"><a href="#tab3">Raksti</a></li>
+            <li class="active"><a href="#tab4">Kontakti</a></li>
+            <li><a class="btn btn-info btn-lg" data-toggle="modal" href="#Pieslegties_Modal">Piereģistrēties</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>
+      
+<div id="Pieslegties_Modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    
+    <div class="modal-content">
+  
+      <div class="modal-body">
+          <p>
+            Lietotājvārds: <input name="login" type="text"><br>
+            Parole: <input name="password" type="password"><br>
+            Atcerēties mani: <input name = 'rembemberLogin' value = '0' type = "checkbox"/></p>
+          <button type="button" id="loginButton" class="btn btn-default">Pieslēgties</button>
+          <button type="button" class="btn btn-default pa_labi" data-dismiss="modal">Iziet</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
 	<header id = "A">
 		<img src="bildes/dancers.png" alt="logo arena" class="logo"/>
         <div id="tabs">
@@ -33,7 +94,7 @@
 		      <ul class = "izvelne2">
 			    <li><a href = "#tab1">Sākums</a></li>
 			    <li><a href = "#tab2">Galerija</a></li>
-                <li><a href = "#tab3">Raksti</a></li>
+          <li><a href = "#tab3">Raksti</a></li>
 			    <li><a href = "#tab4">Kontakti</a></li>
 		      </ul>
 	       </nav>
@@ -63,6 +124,9 @@
         <br/><hr/>
 
 </section>
+
+
+
 <section id="tab3">
     <form action="" method="get">
       Raksts:<br/>
@@ -103,10 +167,13 @@
         </div>	
 	</aside>
 
+
+<script src = "js/bootstrap.js"></script>
+
 	<footer class="page_footer">
 		&copy; Copywrite AlvisAuzinsEDP1
 	</footer>
-	
+<script src="js/lightbox.js"></script>
 </body>
 
 </html>
